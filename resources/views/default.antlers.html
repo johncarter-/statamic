@@ -1,1 +1,16 @@
 {{ content }}
+{{ myassets }}
+    <img style="width: 500px; height:auto;"
+         src="{{ glide:url width='500' }}"
+         srcset="{{ glide:url width='320' }} 320w,
+                {{ glide:url width='480' }} 480w,
+                {{ glide:url width='768' }} 768w,
+                {{ glide:url width='1024' }} 1024w,
+                {{ glide:url width='1280' }} 1280w"
+         sizes="(max-width: 320px) 280px,
+                (max-width: 480px) 440px,
+                (max-width: 768px) 728px,
+                (max-width: 1024px) 984px,
+                1280px"
+         alt="">
+{{ /myassets }}
