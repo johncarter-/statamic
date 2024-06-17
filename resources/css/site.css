@@ -3,3 +3,8 @@
 @import "tailwindcss/utilities";
 
 /* This is all you. */
+@layer base {
+    [x-cloak] {
+        @apply !hidden;
+    }
+}
