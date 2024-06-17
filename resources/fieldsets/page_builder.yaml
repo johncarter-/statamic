@@ -1,0 +1,64 @@
+title: "Page builder"
+fields:
+  - handle: page_builder
+    field:
+      collapse: false
+      previews: false
+      sets:
+        content:
+          display: "Default Content"
+          fields:
+            - handle: content
+              field:
+                collapse: false
+                always_show_set_button: false
+                previews: true
+                buttons:
+                  - h2
+                  - h3
+                  - h4
+                  - h5
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - removeformat
+                  - anchor
+                save_html: false
+                toolbar_mode: fixed
+                link_noopener: false
+                link_noreferrer: false
+                target_blank: false
+                reading_time: false
+                fullscreen: true
+                allow_source: true
+                enable_input_rules: true
+                enable_paste_rules: true
+                antlers: false
+                remove_empty_nodes: false
+                display: Content
+                type: bard
+                icon: bard
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+        todo:
+          display: TODO
+          fields:
+            - handle: note
+              field:
+                antlers: false
+                display: Note
+                type: textarea
+                icon: textarea
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+      display: "Page builder"
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

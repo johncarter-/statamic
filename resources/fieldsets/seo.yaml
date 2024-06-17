@@ -1,0 +1,19 @@
+title: SEO
+fields:
+  document_title:
+    input_type: text
+    type: text
+    localizable: false
+    listable: hidden
+    display: "Document Title"
+    placeholder: "e.g. Page title / Site Name"
+  meta_description:
+    type: textarea
+    localizable: false
+    listable: hidden
+    display: "Meta Description"
+  no_index:
+    type: toggle
+    localizable: false
+    listable: hidden
+    display: "No Index"
