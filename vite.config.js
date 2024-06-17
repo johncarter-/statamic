@@ -18,4 +18,9 @@ export default defineConfig({
         }),
         // vue2(),
     ],
+    server: {
+        hmr: {
+            host: 'localhost',
+        },
+    }
 });
