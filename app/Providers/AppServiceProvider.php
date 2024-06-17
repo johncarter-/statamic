@@ -24,5 +24,7 @@ class AppServiceProvider extends ServiceProvider
         //     'resources/js/cp.js',
         //     'resources/css/cp.css',
         // ]);
+
+        \Statamic\Fieldtypes\Bard::setDefaultButtons(['bold', 'italic', 'unorderedlist']);
     }
 }
