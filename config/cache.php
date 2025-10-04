@@ -40,9 +40,10 @@ return [
 
         'database' => [
             'driver' => 'database',
+            'connection' => env('DB_CACHE_CONNECTION', null),
             'table' => env('DB_CACHE_TABLE', 'cache'),
-            'connection' => env('DB_CACHE_CONNECTION'),
             'lock_connection' => env('DB_CACHE_LOCK_CONNECTION'),
+            'lock_table' => env('DB_CACHE_LOCK_TABLE'),
         ],
 
         'file' => [
@@ -94,6 +95,15 @@ return [
             'path' => storage_path('statamic/static-urls-cache'),
         ],
 
+        'asset_container_contents' => [
+            'driver' => 'file',
+            'path' => storage_path('statamic/asset-container-contents'),
+        ],
+
+        'asset_meta' => [
+            'driver' => 'file',
+            'path' => storage_path('statamic/asset-meta'),
+        ],
     ],
 
     /*
@@ -107,6 +117,6 @@ return [
     |
     */
 
-    'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache_'),
+    'prefix' => env('CACHE_PREFIX', Str::slug((string) env('APP_NAME', 'laravel')).'-cache-'),
 
 ];
